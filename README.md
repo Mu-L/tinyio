@@ -27,13 +27,13 @@ assert out == (4, 5)
 - An error in one coroutine will cancel all coroutines across the entire event loop.
     - If the erroring coroutine is sequentially depended on by a chain of other coroutines, then we chain their tracebacks for easier debugging.
     - Errors propagate to and from synchronous operations ran in threads.
-- Can nest tinyio loops inside each other, none of this one-per-thread business.
+- Can nest `tinyio` loops inside each other, none of this one-per-thread business.
 - Ludicrously simple. No need for futures, tasks, etc. Here's the entirety of the day-to-day API:
     ```python
     tinyio.Loop
-    tinyio.run_in_thread
-    tinyio.sleep
     tinyio.CancelledError
+    tinyio.sleep
+    tinyio.run_in_thread
     ```
 
 ## Installation

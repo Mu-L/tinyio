@@ -90,9 +90,9 @@ plugins:
 
 nav:
     - 'index.md'
-    - 'error_propagation.md'
+    - 'api/loops.md'
+    - 'api/error_propagation.md'
     - API:
-        - 'api/loops.md'
         - 'api/sleeping.md'
         - 'api/threading.md'
         - 'api/synchronisation.md'
@@ -100,4 +100,5 @@ nav:
         - 'api/async_iterators.md'
         - 'api/integrations.md'
         - 'api/isolate.md'
-    - 'faq.md'
+    - Misc:
+        - 'faq.md'
